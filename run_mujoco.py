@@ -19,7 +19,7 @@ parser.add_argument('--iterations', type=int, default=200,
                     help='iterations to run and train agent')
 parser.add_argument('--steps_per_iter', type=int, default=5000, 
                     help='steps of interaction for the agent and the environment in each epoch')
-parser.add_argument('--max_step', type=int, default=1000,
+parser.add_argument('--max_step', type=int, default=200,
                     help='max episode step')
 parser.add_argument('--tensorboard', type=bool, default=True)
 parser.add_argument('--gpu_index', type=int, default=0)
