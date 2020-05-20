@@ -9,7 +9,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 # Configurations
 parser = argparse.ArgumentParser(description='RL algorithms with PyTorch in CartPole environment')
-parser.add_argument('--env', type=str, default='CartPole-v1', 
+parser.add_argument('--env', type=str, default='CartPole-v0', 
                     help='cartpole environment')
 parser.add_argument('--algo', type=str, default='dqn', 
                     help='select an algorithm among dqn, ddqn, a2c')
@@ -21,7 +21,7 @@ parser.add_argument('--eval_per_train', type=int, default=50,
                     help='evaluation number per training')
 parser.add_argument('--evaluation_eps', type=int, default=100,
                     help='evaluation episode number')
-parser.add_argument('--max_step', type=int, default=500,
+parser.add_argument('--max_step', type=int, default=200,
                     help='max episode step')
 parser.add_argument('--threshold_return', type=int, default=490,
                     help='solved requirement for success in given environment')
